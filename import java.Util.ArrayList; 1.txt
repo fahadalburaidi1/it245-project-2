@@ -1,0 +1,11 @@
+import java.Util.ArrayList;
+
+public class BookInquirySystem {
+ 
+  // Represents one book record
+            static class Book {
+     private final int bookId;
+    private final String author;
+ private final int publication Year;
+
+public Book(int BookId, String title, String author, int publication Year)
