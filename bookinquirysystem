@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS BookInquiryDB;
+USE BookInquiryDB;
+
+DROP TABLE IF EXISTS book_logs;
+DROP TABLE IF EXISTS books;
+DROP TABLE IF EXISTS categories;
+
+CREATE TABLE categories (
+    category_id INT PRIMARY KEY AUTO_INCREMENT,
+    category_name VARCHAR(100) NOT NULL UNIQUE
+);
