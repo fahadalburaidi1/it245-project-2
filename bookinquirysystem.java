@@ -32,3 +32,10 @@ public class BookNode {
         this.book = book;
     }
 }
+import java.util.ArrayList;
+
+public class ArrayListOperations {
+    public static void addBookToList(ArrayList<Book> books, Book newBook) {
+        books.add(newBook);
+    }
+}
