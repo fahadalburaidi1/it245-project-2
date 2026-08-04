@@ -55,3 +55,17 @@ public class ArrayListSearch {
         books.add(newBook);
     }
 }
+public class BSTInsertion {
+    public static BookNode insertBook(BookNode root, Book newBook) {
+        if (root == null) {
+            return new BookNode(newBook);
+        }
+        int comparison = newBook.getTitle().compareToIgnoreCase(root.book.getTitle());
+        if (comparison < 0) {
+            root.left = insertBook(root.left, newBook);
+        } else {
+            root.right = insertBook(root.right, newBook);
+        }
+        return root;
+    }
+}
