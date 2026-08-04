@@ -23,3 +23,12 @@ public class Book {
                 + ", Publication Year: " + publicationYear;
     }
 }
+public class BookNode {
+    Book book;
+    BookNode left;
+    BookNode right;
+
+    public BookNode(Book book) {
+        this.book = book;
+    }
+}
