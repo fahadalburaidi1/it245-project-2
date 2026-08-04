@@ -35,6 +35,22 @@ public class BookNode {
 import java.util.ArrayList;
 
 public class ArrayListOperations {
+    import java.util.ArrayList;
+
+public class ArrayListSearch {
+    public static void searchUsingArrayList(ArrayList<Book> books, String searchTitle) {
+        boolean found = false;
+        for (Book book : books) {
+            if (book.getTitle().equalsIgnoreCase(searchTitle)) {
+                System.out.println(book);
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("Book not found.");
+        }
+    }
+}
     public static void addBookToList(ArrayList<Book> books, Book newBook) {
         books.add(newBook);
     }
