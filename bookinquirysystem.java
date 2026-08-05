@@ -69,3 +69,18 @@ public class BSTInsertion {
         return root;
     }
 }
+public class BSTSearch {
+    public static Book searchUsingBST(BookNode root, String searchTitle) {
+        if (root == null) {
+            return null;
+        }
+        int comparison = searchTitle.compareToIgnoreCase(root.book.getTitle());
+        if (comparison == 0) {
+            return root.book;
+        } else if (comparison < 0) {
+            return searchUsingBST(root.left, searchTitle);
+        } else {
+            return searchUsingBST(root.right, searchTitle);
+        }
+    }
+}
