@@ -84,3 +84,12 @@ public class BSTSearch {
         }
     }
 }
+public class BSTDisplay {
+    public static void displayBooksInOrder(BookNode root) {
+        if (root != null) {
+            displayBooksInOrder(root.left);
+            System.out.println(root.book);
+            displayBooksInOrder(root.right);
+        }
+    }
+}
