@@ -93,3 +93,14 @@ public class BSTDisplay {
         }
     }
 }
+public class MainDataInit {
+    public static void main(String[] args) {
+        Book book1 = new Book(101, "Data Structures", "Mark Weiss", 2012);
+        Book book2 = new Book(102, "Java Programming", "Joyce Farrell", 2019);
+        Book book3 = new Book(103, "Database Systems", "Thomas Connolly", 2015);
+        Book book4 = new Book(104, "Computer Networks", "Andrew Tanenbaum", 2021);
+        Book book5 = new Book(105, "Operating Systems", "William Stallings", 2018);
+        
+        System.out.println("Sample books initialized successfully.");
+    }
+}
