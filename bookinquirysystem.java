@@ -104,3 +104,12 @@ public class MainDataInit {
         System.out.println("Sample books initialized successfully.");
     }
 }
+import java.util.ArrayList;
+
+public class ArrayListTest {
+    public static void testArrayListSolution(ArrayList<Book> bookList) {
+        System.out.println("First Solution: ArrayList");
+        System.out.println("Searching for Database Systems:");
+        ArrayListSearch.searchUsingArrayList(bookList, "Database Systems");
+    }
+}
