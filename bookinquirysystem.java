@@ -113,3 +113,11 @@ public class ArrayListTest {
         ArrayListSearch.searchUsingArrayList(bookList, "Database Systems");
     }
 }
+import java.util.ArrayList;
+
+public class ArrayListNegativeTest {
+    public static void testMissingBook(ArrayList<Book> bookList) {
+        System.out.println("\nSearching for Artificial Intelligence:");
+        ArrayListSearch.searchUsingArrayList(bookList, "Artificial Intelligence");
+    }
+}
