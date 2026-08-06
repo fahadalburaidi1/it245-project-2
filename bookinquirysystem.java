@@ -139,3 +139,14 @@ public class BSTDisplayTest {
         BSTDisplay.displayBooksInOrder(root);
     }
 }
+public class BSTSearchTest {
+    public static void testBSTSearchSuccess(BookNode root) {
+        System.out.println("\nSearching for Database Systems:");
+        Book result = BSTSearch.searchUsingBST(root, "Database Systems");
+        if (result != null) {
+            System.out.println(result);
+        } else {
+            System.out.println("Book not found.");
+        }
+    }
+}
