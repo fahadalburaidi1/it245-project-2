@@ -150,3 +150,14 @@ public class BSTSearchTest {
         }
     }
 }
+public class BSTSearchNegativeTest {
+    public static void testBSTSearchNotFound(BookNode root) {
+        System.out.println("\nSearching for Artificial Intelligence:");
+        Book result = BSTSearch.searchUsingBST(root, "Artificial Intelligence");
+        if (result != null) {
+            System.out.println(result);
+        } else {
+            System.out.println("Book not found.");
+        }
+    }
+}
