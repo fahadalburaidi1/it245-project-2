@@ -132,3 +132,10 @@ public class BSTTestInit {
         return root;
     }
 }
+public class BSTDisplayTest {
+    public static void testBSTDisplay(BookNode root) {
+        System.out.println("\nSecond Solution: Binary Search Tree");
+        System.out.println("Books in alphabetical order:");
+        BSTDisplay.displayBooksInOrder(root);
+    }
+}
