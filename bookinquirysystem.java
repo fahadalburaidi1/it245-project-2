@@ -161,3 +161,11 @@ public class BSTSearchNegativeTest {
         }
     }
 }
+import java.util.ArrayList;
+
+public class CaseSensitivityTest {
+    public static void testCaseInsensitiveSearch(ArrayList<Book> bookList) {
+        System.out.println("\nTesting Case-Insensitive Search:");
+        ArrayListSearch.searchUsingArrayList(bookList, "database systems");
+    }
+}
