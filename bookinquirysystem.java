@@ -121,3 +121,14 @@ public class ArrayListNegativeTest {
         ArrayListSearch.searchUsingArrayList(bookList, "Artificial Intelligence");
     }
 }
+public class BSTTestInit {
+    public static BookNode populateBST(Book b1, Book b2, Book b3, Book b4, Book b5) {
+        BookNode root = null;
+        root = BSTInsertion.insertBook(root, b1);
+        root = BSTInsertion.insertBook(root, b2);
+        root = BSTInsertion.insertBook(root, b3);
+        root = BSTInsertion.insertBook(root, b4);
+        root = BSTInsertion.insertBook(root, b5);
+        return root;
+    }
+}
